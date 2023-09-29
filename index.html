@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./main.js" defer></script>
+    <!-- <script src="./main.js" defer></script> -->
     <title>Simple HompePage</title>
   </head>
   <body bgcolor="#F2F9FE" class="duration-500 dark:bg-[#111729]">    
@@ -127,6 +127,33 @@
 
 
       </main>
+
+      <footer class="mt-[50px]">
+        <section id="footer" class=" flex items-center justify-center  text-[#111729] dark:text-white ">made by GitHub:  <a href="https://github.com/sileyekounou/simple-homepage" class="italic font-light">sileyekounou</a></section>
+      </footer>
     </div>
   </body>
+
+  <script>
+    const menuHamber = document.querySelector('#menu-hamber')
+    const menuCross = document.querySelector('#menu-cross')
+    const nav = document.querySelector('#nav')
+
+
+
+    menuHamber.addEventListener('click', ()=> {    
+        nav.classList.toggle('mr-[-100%]')
+    } )
+
+    menuCross.addEventListener('click', ()=> {    
+        nav.classList.toggle('mr-[-100%]')
+    } )
+
+    const mode = document.querySelector('.mode')
+    const button = document.querySelector('#toggle-mode')
+
+    button.addEventListener('click', () => {
+        mode.classList.toggle('dark')
+    })
+  </script>
 </html>
